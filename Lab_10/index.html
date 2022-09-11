@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lab10</title>
+<script src="script.js" async></script>
+</head>
+<body onload="getUserName()">
+<h1 id="name"></h1>
+<form>
+    <label for="addItem"><b>Add items to your list:</b></label><br>
+    <input type="text" id="addItem" placeholder="Items">
+    <input type="number" id="quantity" min="1" placeholder="Quantity">
+    <button type="button" id="addItemButton" onclick="addLocalList()"> Add Item </button>
+    <button type="button" id="logout" onclick="userLogout()"> Logout </button>
+</form>
+<table id="table">
+    <tr>
+        <th>No.</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
+    </tr>
+</table>
+</body>
+</html>
